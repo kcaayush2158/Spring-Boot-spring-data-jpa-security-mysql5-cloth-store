@@ -1,0 +1,76 @@
+	ul li :hover{
+  		background-color: orange;
+  	}
+  	nav{
+  		height: 80PX;	
+  		padding: 0px;
+
+  	}
+
+  	ul li {
+  		margin-top: 15px;  		
+  	}
+  	.first{
+  		height: 600px;
+  		width: 200px;
+  		background-color:;
+  		/*margin-top: 20px;*/
+  		/*margin-left: 20px;*/
+  		/*box-shadow: 5px 20px grey;*/
+  	}
+  	.first a{
+  		color:white;
+  		padding: 15px;
+
+  		
+  	}
+  	.first  a:hover{
+  		background-color: orange;
+  	}
+  	.dropdown-menu{
+  		text-align: center;
+  		border-collapse: collapse;
+  		background-color: transparent;	
+  		border:none;
+  	}
+
+  	input{
+  		height: 35px;
+		width: 150px;
+		transition:all 2s;
+		font-size: 15px;
+		text-decoration: none;
+		font-style: italic;
+		margin-bottom: 20px;
+		padding-top: 3px;
+		text-align: center;
+
+	}
+	
+	.search{
+		float:right;
+		margin-top: 30px;
+		padding-left: 50px;
+		position: relative;
+
+	}
+	.Moderator{
+		position: absolute;
+		margin-top: 2 0px;
+		
+	}
+	button{
+		font-size: 20px;
+	}
+
+	.row{
+		padding-right: 0px;
+		margin-right: 0px; 
+	}
+		
+	
+	.table{
+		/*margin-left: 25px;
+		margin-right: 25px;*/
+	}
+	

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title></title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+   <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-silver bg-dark light">
+  <a class="navbar-brand" href="#">logo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Collection</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+     <div class="form-group" >
+        <a class="login" href="/login">Login</a>
+
+      </div>
+
+    </form>
+  
+  </div>
+</nav>
+
+<div class="row" style="margin-top: 20px;">
+  <div class="col-md-2"></div>
+  <div class="col-md-8" style="width: 100%; height: 500px;">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/def.jpg" alt="Los Angeles" style="width: 100%; height:500px;"  >
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="image/def.jpg" alt="Chicago" style="width: 100%; height:500px;">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="image/xyz.jpg" alt="New York" style="width: 100%; height:500px;">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+  </div>
+  <div class="col-md-2"></div>
+</div>
+
+<div class="row" style="margin-top: 20px;">
+  <div class="col-md-3">
+    <div class="card" style="width: 250px; height: 350px; margin: auto;">
+  <img class="card-img-top" src="image/abc.jpg" alt="Card image cap" style="width: 70%; height: 70%; margin: auto;">
+  <div class="card-body" style="margin: auto;">
+   <h4 class="card-title">Gown</h4>
+   <a href="#" class="btn btn-primary">See Details</a>
+  </div>
+</div>
+  </div>
+   <div class="col-md-3">
+     <div class="card" style="width: 250px; height: 350px; margin: auto;">
+  <img class="card-img-top" src="image/abc.jpg" alt="Card image cap" style="width: 70%; height: 70%; margin: auto;">
+  <div class="card-body" style="margin: auto;">
+   <h4 class="card-title">Gown</h4>
+   <a href="#" class="btn btn-primary">See Details</a>
+  </div>
+</div>
+  </div>
+     <div class="col-md-3">
+   <div class="card" style="width: 250px; height: 350px; margin: auto;">
+  <img class="card-img-top" src="image/abc.jpg" alt="Card image cap" style="width: 70%; height: 70%; margin: auto;">
+  <div class="card-body" style="margin: auto;">
+   <h4 class="card-title">Gown</h4>
+   <a href="#" class="btn btn-primary">See Details</a>
+  </div>
+</div>
+  </div>
+     <div class="col-md-3">
+       <div class="card" style="width: 250px; height: 350px;margin: auto;">
+  <img class="card-img-top" src="image/abc.jpg" alt="Card image cap" style="width: 70%; height: 70%; margin: auto;">
+  <div class="card-body" style="margin: auto;">
+   <h4 class="card-title">Gown</h4>
+   <a href="#" class="btn btn-primary">See Details</a>
+  </div>
+</div>
+  </div>
+
+</div>
+
+<!-- 2ndrow -->
+<div class="row" style="margin-top: 20px;">
+  <div class="col-md-3">
+    <div class="card" style="width: 250px; height: 350px; margin: auto;">
+  <img class="card-img-top" src="image/abc.jpg" alt="Card image cap" style="width: 70%; height: 70%; margin: auto;">
+  <div class="card-body" style="margin: auto;">
+   <h4 class="card-title">Gown</h4>
+   <a href="#" class="btn btn-primary">See Details</a>
+  </div>
+</div>
+  </div>
+   <div class="col-md-3">
+     <div class="card" style="width: 250px; height: 350px; margin: auto;">
+  <img class="card-img-top" src="image/abc.jpg" alt="Card image cap" style="width: 70%; height: 70%; margin: auto;">
+  <div class="card-body" style="margin: auto;">
+   <h4 class="card-title">Gown</h4>
+   <a href="#" class="btn btn-primary">See Details</a>
+  </div>
+</div>
+  </div>
+     <div class="col-md-3">
+   <div class="card" style="width: 250px; height: 350px; margin: auto;">
+  <img class="card-img-top" src="image/abc.jpg" alt="Card image cap" style="width: 70%; height: 70%; margin: auto;">
+  <div class="card-body" style="margin: auto;">
+   <h4 class="card-title">Gown</h4>
+   <a href="#" class="btn btn-primary">See Details</a>
+  </div>
+</div>
+  </div>
+     <div class="col-md-3">
+       <div class="card" style="width: 250px; height: 350px; margin: auto;">
+  <img class="card-img-top" src="image/abc.jpg" alt="Card image cap" style="width: 70%; height: 70%; margin: auto;">
+  <div class="card-body" style="margin: auto;">
+   <h4 class="card-title">Gown</h4>
+   <a href="#" class="btn btn-primary">See Details</a>
+  </div>
+</div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row" style="background-color: silver;">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Footer Content</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background-color: grey;">� 2018 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/" style="color: black;"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+</body>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</html>
+

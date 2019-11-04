@@ -15,7 +15,6 @@
 <link rel="stylesheet" type="text/css"
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/styles.css">
-
 </head>
 <body>
 	<header th:insert="fragment.html :: nav"></header>
@@ -25,14 +24,16 @@
 
 						<table class="table table-striped">
 							<thead>
-								<tr>
+							 	<tr>
 									<th>Products Id</th>
 									<th>Name</th>
 									<th>Brand</th>
 									<th>Made In</th>
+									<th>Author</th>
+									<th>Description</th>
 									<th>Price</th>
 									<th>Action</th>
-								</tr>
+							</tr>
 							</thead>
 							<tbody>
 								<tr th:each="product : ${listBook}">
@@ -40,10 +41,11 @@
 									<td th:text="${product.name}">Name</td>
 									<td th:text="${product.brand}">Brand</td>
 									<td th:text="${product.madein}">Made In</td>
+									<td th:text="${product.author}">Author</td>
+									<td th:text="${product.description}">Description</td>
 									<td th:text="${product.price}">price</td>
 									<td><a th:href="@{'/edit/'+${product.id}}">Edit</a>
-										&nbsp;&nbsp;&nbsp;&nbsp; <a
-										th:href="@{'/delete/'+${product.id}}">Delete</a></td>
+									 <a th:href="@{'/delete/'+${product.id}}">Delete</a></td>
 								</tr>
 							</tbody>
 
@@ -53,7 +55,6 @@
 				</div>
 
 			</div>
-		</div>
 </body>
 </html>
 

@@ -25,17 +25,16 @@
 	<div class="container" style="margin-top: 200px;">
 		<div class="col-lg-5 offset-lg-4"
 			style="border: 1px solid black; padding: 40px;">
-			<form th:action="@{/login}" method="POST">
+			<form  role="form" th:action="@{/login}" method="POST">
 				<h2 class="text-center mb-2">Welcome to kapda pasal</h2>
-				<br> <label for="username">Username : </label> <input
-					type="text" name="username" id="username" class="form-control mb-2" />
-				<label for="password">Password</label> <input type="password"
-					name="password" id="password" class="form-control mb-2" />
-
+				<br> 
+				<label for="username">Username : </label> 
+				<input type="text" name="username" id="username" class="form-control mb-2" />
+				<label for="password">Password</label> 
+				<input type="password" name="password" id="password" class="form-control mb-2" />
 				<button class="btn btn-primary mt-4 mb-3 offset-lg-4 ">
 					<i class="fa fa-paper-plane"></i> Login
 				</button>
-			
 			</form>
 				<div th:if="${param.error}">
 					<div class="alert alert-danger text-center">

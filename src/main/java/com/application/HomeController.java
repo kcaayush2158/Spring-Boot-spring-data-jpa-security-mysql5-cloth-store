@@ -8,10 +8,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.application.entity.Bookstore;
-import com.application.entity.User;
 import com.application.service.BookService;
 
 @Controller
@@ -19,6 +20,7 @@ public class HomeController {
 
 	@Autowired
 	public BookService bookService;
+
 	@Autowired
 	public BCryptPasswordEncoder bcryptPasswordEncoder;
 
@@ -39,10 +41,13 @@ public class HomeController {
 
 	@PostMapping("/save")
 	public String createNewProduct(@ModelAttribute("product") Bookstore product) {
-		User user = new User();
-		String rawPassword = user.getPassword();
-		String password = bcryptPasswordEncoder.encode(rawPassword);
 		bookService.save(product);
+		return "redirect:/";
+	}
+
+	@GetMapping("/delete/{id}")
+	public String deleteProduct(@PathVariable(name = "id") int id) {
+		bookService.delete(id);
 		return "redirect:/";
 	}
 
@@ -55,4 +60,19 @@ public class HomeController {
 	public String getSignup(Model model) {
 		return "signup";
 	}
+	
+	@GetMapping("/edit/{id}")
+	public ModelAndView getEditedId(@PathVariable("id") int id) {
+		ModelAndView model = new ModelAndView("edit_product");
+		Bookstore bookstore = bookService.getProduct(id);
+		model.addObject("product",bookstore);
+		return model;
+	}
+	@GetMapping("/logout-success")
+	public String loginSuccess() {
+		return "login";
+	}
+
+	
+
 }

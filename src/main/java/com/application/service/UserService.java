@@ -31,5 +31,12 @@ public class UserService {
 	public void delete(int id) {
 		userRepository.deleteById(id);
 	}
-
+	
+	public User findByUsername(String username) {
+		return userRepository.findByUsername(username);
+	}
+	
+	public List<User> getLoginUsernameAndPassword(){
+		return userRepository.getUsernameAndPassword();
+	}
 }

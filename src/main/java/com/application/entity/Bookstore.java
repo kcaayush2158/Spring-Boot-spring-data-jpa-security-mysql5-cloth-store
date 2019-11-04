@@ -1,24 +1,60 @@
 package com.application.entity;
 
-import java.util.Date;
-
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class Bookstore {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
+	private String name;
 	private String title;
 	private String author;
+	private String brand;
+	private String madein;
 	private String description;
+	private Long price;
+	
+	public String getMadein() {
+		return madein;
+	}
+
+	public void setMadein(String madein) {
+		this.madein = madein;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+
 
 	public int getId() {
 		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Long getPrice() {
+		return price;
+	}
+
+	public void setPrice(Long price) {
+		this.price = price;
 	}
 
 	public void setId(int id) {
@@ -48,6 +84,5 @@ public class Bookstore {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
 
 }

@@ -5,92 +5,54 @@
 <title>Edit New Product</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div class="container-fluid">
-	<div class="row">
 <header th:insert="fragment.html :: nav"></header>
-	</div>
+	<div class="container-fluid">
 		<div class="row">
-		
-<div class="col-md-2">
-	<sidebar th:insert="sidebar.html :: sidebar"></sidebar>
-</div>
-	<div class="col-md-10">
-<marquee behavior="scroll" direction="left" scrollamount="3"><h1 style="color: black;">Well come to Admin Panel</h1></marquee>
+			<div class="col-md-10">
+			
 
-<h1>Edit Product</h1><br>
-<form action="#" th:action="@{/save}" th:object="${product}" method="post">
-<table border="0" cellpadding="10">
+				<h1>Edit Product</h1>
+				<br>
+				<form action="#" th:action="@{/save}" th:object="${product}"
+					method="post">
+					<table border="0" cellpadding="10">
 
-<tr>
-<td>Product Id</td>
-<td><input type="text" th:field="*{id}" readonly="readonly"/></td>
-</tr>
-<tr>
-<td>Product Name</td>
-<td><input type="text" th:field="*{name}"/></td>
-</tr>
-<tr>
-<td>Brand</td>
-<td><input type="text" th:field="*{brand}"/></td>
-</tr>
+						<tr>
+							<td>Product Id</td>
+							<td><input type="text" th:field="*{id}" readonly="readonly" /></td>
+						</tr>
+						<tr>
+							<td>Product Name</td>
+							<td><input type="text" th:field="*{name}" /></td>
+						</tr>
+						<tr>
+							<td>Brand</td>
+							<td><input type="text" th:field="*{brand}" /></td>
+						</tr>
 
-<tr>
-<td>Made In</td>
-<td><input type="text" th:field="*{madein}"/></td>
-</tr>
-<tr>
-<td>Price</td>
-<td><input type="text" th:field="*{price}"/></td>
-</tr>
-<tr>
-<td colspan="2"><button type="submit">Save</button></td>
-</tr>
-</table>
-</form>
-</div>
-</div>
-</div>
-
-
-
-<!-- <div align="center">
-<h1>Edit Product</h1><br>
-<form action="#" th:action="@{/save}" th:object="${product}" method="post">
-<table border="0" cellpadding="10">
-
-<tr>
-<td>Product Id</td>
-<td><input type="text" th:field="*{id}" readonly="readonly"/></td>
-</tr>
-<tr>
-<td>Product Name</td>
-<td><input type="text" th:field="*{name}"/></td>
-</tr>
-<tr>
-<td>Brand</td>
-<td><input type="text" th:field="*{brand}"/></td>
-</tr>
-
-<tr>
-<td>Made In</td>
-<td><input type="text" th:field="*{madein}"/></td>
-</tr>
-<tr>
-<td>Price</td>
-<td><input type="text" th:field="*{price}"/></td>
-</tr>
-<tr>
-<td colspan="2"><button type="submit">Save</button></td>
-</tr>
-</table>
-</form>
-</div> -->
+						<tr>
+							<td>Made In</td>
+							<td><input type="text" th:field="*{madein}" /></td>
+						</tr>
+						<tr>
+							<td>Price</td>
+							<td><input type="text" th:field="*{price}" /></td>
+						</tr>
+						<tr>
+							<td colspan="2"><button type="submit" >Save</button></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </html>
